@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dhiyanesh Senthil – CSE Student | Generative AI & Python</title>
+<meta name="description" content="Portfolio of Dhiyanesh Senthil, a first-year Computer Science and Engineering student at SNS College of Technology, Coimbatore, interested in Generative AI, machine learning and software development.">
+<meta name="theme-color" content="#0b0b0f">
+<meta property="og:title" content="Dhiyanesh Senthil – Portfolio">
+<meta property="og:description" content="First-year CSE student exploring Generative AI, LLMs and Python development.">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#0b0b0f;--surface:#14141b;--surface2:#1b1b25;--line:#272734;--text:#ececf3;--muted:#9a9ab0;--accent:#8b7cff;--accent2:#5b9dff;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--accent2);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+svg.lucide{width:1.1em;height:1.1em;vertical-align:-.17em;flex:none}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:#fff;padding:8px 14px;border-radius:8px;z-index:100}.skip:focus{left:8px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(11,11,15,.8);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;letter-spacing:-.02em}.logo span{color:var(--accent)}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav a{padding:8px 12px;border-radius:8px;color:var(--muted);font-size:.92rem;transition:.2s}
+nav a:hover{color:var(--text);background:var(--surface)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:8px;cursor:pointer}
+.burger .ic-x,.burger.open .ic-m{display:none}.burger.open .ic-x{display:inline-block}
+@media(max-width:820px){.burger{display:block}nav{position:absolute;left:0;right:0;top:64px;background:var(--bg);border-bottom:1px solid var(--line);display:none;padding:12px 24px}nav.open{display:block}nav ul{flex-direction:column}}
+.hero{padding:110px 0 90px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:560px;height:560px;right:-180px;top:-120px;background:radial-gradient(circle,rgba(139,124,255,.22),transparent 65%);pointer-events:none}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:var(--surface);padding:6px 14px;border-radius:99px;font-size:.85rem;color:var(--muted)}
+.dot{width:7px;height:7px;border-radius:50%;background:#4ade80}
+h1{font-size:clamp(2.6rem,7vw,4.8rem);line-height:1.05;letter-spacing:-.04em;margin:22px 0 16px}
+.grad{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.15rem;color:var(--muted);max-width:620px;margin:0 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:12px;font-weight:600;font-size:.95rem;border:1px solid var(--line);background:var(--surface);cursor:pointer;color:var(--text);font-family:inherit;transition:.2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--accent)}
+.btn.primary{background:linear-gradient(100deg,var(--accent),var(--accent2));border:0;color:#0b0b0f}
+section.s{padding:84px 0;border-top:1px solid var(--line)}
+.eyebrow{color:var(--accent);font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);letter-spacing:-.03em;margin:6px 0 36px;line-height:1.15}
+h3{margin:0 0 6px;font-size:1.15rem;letter-spacing:-.01em}
+p{margin:0 0 14px}.muted{color:var(--muted)}
+.grid{display:grid;gap:18px}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(139,124,255,.5);box-shadow:0 14px 40px -18px rgba(139,124,255,.45)}
+.ico{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:var(--surface2);color:var(--accent);margin-bottom:14px;font-size:1.2rem}
+.facts{display:grid;gap:12px}.facts div{display:flex;gap:12px;align-items:flex-start;color:var(--muted)}.facts svg{color:var(--accent);margin-top:5px}
+.facts b{color:var(--text);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tag{font-size:.78rem;padding:4px 11px;border-radius:99px;background:var(--surface2);border:1px solid var(--line);color:var(--muted)}
+.lvl{display:flex;gap:5px;margin-top:10px}.lvl i{height:5px;flex:1;border-radius:9px;background:var(--line)}.lvl i.on{background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.lvlt{font-size:.78rem;color:var(--muted);margin-top:6px}
+.shot{aspect-ratio:16/9;border-radius:12px;border:1px dashed var(--line);background:repeating-linear-gradient(45deg,var(--surface2),var(--surface2) 10px,var(--surface) 10px,var(--surface) 20px);display:grid;place-items:center;color:var(--muted);font-size:.85rem;margin-bottom:18px}
+.feat{list-style:none;padding:0;margin:12px 0;display:grid;gap:6px;color:var(--muted);font-size:.93rem}.feat li{display:flex;gap:8px;align-items:center}.feat svg{color:var(--accent)}
+.note{font-size:.85rem;color:#e7c46a;background:rgba(231,196,106,.08);border:1px solid rgba(231,196,106,.25);padding:10px 14px;border-radius:10px;margin:12px 0}
+.badge{display:inline-block;font-size:.72rem;font-weight:600;padding:3px 10px;border-radius:99px;margin-bottom:12px;background:rgba(139,124,255,.15);color:var(--accent)}
+.badge.b2{background:rgba(91,157,255,.15);color:var(--accent2)}.badge.b3{background:var(--surface2);color:var(--muted)}
+.sub{font-size:1rem;color:var(--muted);margin:34px 0 14px;font-weight:600}
+form{display:grid;gap:14px}
+label{font-size:.85rem;color:var(--muted);display:grid;gap:6px}
+input,textarea{background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:12px 14px;font:inherit;width:100%}
+input:focus,textarea:focus{outline:2px solid var(--accent);border-color:transparent}
+.clinks{display:grid;gap:12px;margin-bottom:6px}.clinks a{display:flex;gap:12px;align-items:center;padding:14px 18px;border:1px solid var(--line);background:var(--surface);border-radius:14px;transition:.2s;word-break:break-word}.clinks a:hover{border-color:var(--accent)}.clinks svg{color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.88rem;text-align:center}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--surface2);border:1px solid var(--accent);padding:12px 18px;border-radius:12px;z-index:70;font-size:.9rem;max-width:90vw}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}.card,.btn{transition:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.383.0/dist/umd/lucide.min.js"></script>
+<script>
+const {useState,useEffect,useRef}=React;
+const h=htm.bind(React.createElement);
+
+/* ---------- Content (edit here) ---------- */
+const ME={name:'Dhiyanesh Senthil',email:'dhiyaneshsenthil@gmail.com',
+ linkedin:'https://www.linkedin.com/in/dhiyanesh-senthil-a131b7401/',github:'https://github.com/dhiyaneshenthil',
+ resume:'' /* add resume file path, e.g. 'resume.pdf' */};
+const NAV=['About','Skills','Projects','Certifications','Activities','Learning','Contact'];
+const SKILLS=[['Python',3,'Intermediate','code-xml'],['HTML',2,'Working knowledge','layout-template'],['CSS',2,'Working knowledge','palette'],
+ ['Generative AI',2,'Learning','sparkles'],['Prompt Engineering',2,'Learning','message-square-text'],['AI Tools',2,'Hands-on use','wrench'],
+ ['Git & GitHub',2,'Working knowledge','git-branch'],['Machine Learning',1,'Fundamentals','brain'],['System Design',1,'Fundamentals','network']];
+const PROJECTS=[{title:'AgriSense AI',sub:'Smart Agriculture Monitoring System',icon:'sprout',link:ME.github+'/AgriSense',
+ desc:'An AI-focused smart agriculture platform designed to support farmers through farm monitoring and data-driven insights.',
+ feats:[['layout-dashboard','Farm monitoring dashboard'],['cloud-sun','Weather information'],['leaf','Crop insights'],['bell','Alerts and notifications'],['bot','AI assistant interface']],
+ tech:['Python','HTML','CSS','AI'],note:'Hardware integration is currently in progress and not yet operational.'},
+ {title:'Campus Network Intelligence',sub:'Hackathon project · Team Crime',icon:'network',
+ desc:'Built during GTA: Hack City, organized by Campus Konnect at SNS College of Technology. A collaborative effort in technical problem-solving under time pressure.',
+ feats:[['users','Teamwork with Team Crime'],['puzzle','Technical problem-solving'],['git-branch','Collaborative development']],tech:['Teamwork','Problem Solving'],note:''}];
+const CERTS=[['AI Fluency: Framework and Foundations','Claude Academy','Certificate','award'],
+ ['Build Your Own Local AI Assistant: From Tools to Grounded AI Agents','SNS College of Technology','Workshop participation','presentation'],
+ ['Python Fundamentals','Learning module','Learning module','book-open'],['Introduction to Generative AI and Agents','Learning module','Learning module','book-open'],
+ ['Microsoft AI learning modules','Microsoft','Learning module','book-open']];
+const LEARNING=[['Generative AI','sparkles'],['Large Language Models','brain'],['RAG','database'],['AI Agents','bot'],['Python Development','code-xml']];
+
+/* ---------- Components ---------- */
+function Icon({n}){return h`<i data-lucide=${n} aria-hidden="true"></i>`}
+function Reveal({children,cls=''}){
+  const r=useRef();
+  useEffect(()=>{const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){r.current.classList.add('in');o.disconnect()}},{threshold:.12});o.observe(r.current);return()=>o.disconnect()},[]);
+  return h`<div ref=${r} className=${'rv '+cls}>${children}</div>`}
+function Section({id,eyebrow,title,children}){
+  return h`<section className="s" id=${id}><div className="wrap"><${Reveal}><div className="eyebrow">${eyebrow}</div><h2>${title}</h2><//>${children}</div></section>`}
+function Nav({onResume}){
+  const [open,setOpen]=useState(false);
+  return h`<header><div className="wrap bar">
+    <a href="#home" className="logo">dhiyanesh<span>.</span>dev</a>
+    <nav className=${open?'open':''} aria-label="Primary"><ul>${NAV.map(n=>h`<li key=${n}><a href=${'#'+n.toLowerCase()} onClick=${()=>setOpen(false)}>${n}</a></li>`)}</ul></nav>
+    <button className=${'burger '+(open?'open':'')} onClick=${()=>setOpen(!open)} aria-label="Toggle menu" aria-expanded=${open}><span className="ic-m"><${Icon} n="menu"/></span><span className="ic-x"><${Icon} n="x"/></span></button>
+  </div></header>`}
+function Hero({onResume}){
+  return h`<section className="hero" id="home"><div className="wrap">
+    <${Reveal}><span className="pill"><span className="dot"></span>Open to learning opportunities & internships</span>
+    <h1>Hi, I’m <span className="grad">${ME.name}</span></h1>
+    <p className="lead">First-year Computer Science and Engineering student at SNS College of Technology, exploring Generative AI, machine learning and software development — one practical project at a time.</p>
+    <div className="btns">
+      <a className="btn primary" href="#projects">View Projects <${Icon} n="arrow-right"/></a>
+      <a className="btn" href="#contact"><${Icon} n="mail"/> Contact Me</a>
+      <button className="btn" onClick=${onResume}><${Icon} n="download"/> Resume</button>
+    </div><//></div></section>`}
+function About(){
+  const f=[['graduation-cap','Education','B.E. Computer Science and Engineering, SNS College of Technology, Coimbatore'],['calendar','Expected graduation','2030'],['map-pin','Location','Coimbatore, Tamil Nadu, India']];
+  return h`<${Section} id="about" eyebrow="About" title="Curious builder, early in the journey">
+    <div className="grid g2"><${Reveal}><p className="muted">I’m a Computer Science and Engineering student with intermediate Python skills and a strong interest in Artificial Intelligence, Machine Learning, Generative AI and Software Development.</p>
+    <p className="muted">I enjoy learning new technologies, building practical projects, taking part in hackathons and solving technical problems. Right now I’m building a foundation in LLMs, RAG and AI agents.</p>
+    <p className="muted"><b style=${{color:'var(--text)'}}>Goal:</b> to grow into a skilled AI and software engineer by building real projects and learning from every team I work with.</p><//>
+    <${Reveal}><div className="card facts">${f.map(([i,a,b])=>h`<div key=${a}><${Icon} n=${i}/><span><b>${a}</b><br/>${b}</span></div>`)}</div><//></div><//>`}
+function Skills(){
+  return h`<${Section} id="skills" eyebrow="Skills" title="Tools I work with">
+    <div className="grid g3">${SKILLS.map(([n,l,t,i])=>h`<${Reveal} key=${n}><div className="card"><div className="ico"><${Icon} n=${i}/></div><h3>${n}</h3>
+      <div className="lvl" aria-hidden="true">${[1,2,3].map(k=>h`<i key=${k} className=${k<=l?'on':''}></i>`)}</div><div className="lvlt">${t}</div></div><//>`)}</div><//>`}
+function Projects(){
+  return h`<${Section} id="projects" eyebrow="Projects" title="Things I’ve built">
+    <div className="grid g2">${PROJECTS.map(p=>h`<${Reveal} key=${p.title}><article className="card">
+      <div className="shot"><span><${Icon} n=${p.icon}/> Screenshot placeholder</span></div>
+      <h3>${p.title}</h3><div className="muted" style=${{fontSize:'.9rem',marginBottom:10}}>${p.sub}</div><p className="muted">${p.desc}</p>
+      <ul className="feat">${p.feats.map(([i,t])=>h`<li key=${t}><${Icon} n=${i}/>${t}</li>`)}</ul>
+      ${p.note&&h`<div className="note">In progress: ${p.note}</div>`}
+      <div className="tags">${p.tech.map(t=>h`<span className="tag" key=${t}>${t}</span>`)}</div>
+      ${p.link?h`<a className="btn" href=${p.link} target="_blank" rel="noopener noreferrer"><${Icon} n="github"/> View on GitHub</a>`:h`<span className="tag">Repository not yet published</span>`}
+    </article><//>`)}</div><//>`}
+function Certs(){
+  const c={'Certificate':'','Workshop participation':' b2','Learning module':' b3'};
+  const grp=t=>CERTS.filter(x=>x[2]===t);
+  const block=(t,title)=>h`<div key=${t}><div className="sub">${title}</div><div className="grid g3">${grp(t).map(([n,o,k,i])=>h`<${Reveal} key=${n}><div className="card"><span className=${'badge'+c[k]}>${k}</span><div className="ico"><${Icon} n=${i}/></div><h3 style=${{fontSize:'1rem'}}>${n}</h3><div className="muted" style=${{fontSize:'.88rem'}}>${o}</div></div><//>`)}</div></div>`;
+  return h`<${Section} id="certifications" eyebrow="Certifications" title="Certificates & learning">
+    ${block('Certificate','Certificate')}${block('Workshop participation','Workshop participation')}${block('Learning module','Individual learning modules')}<//>`}
+function Activities(){
+  return h`<${Section} id="activities" eyebrow="Hackathons & Activities" title="Learning by doing"><${Reveal}><div className="card" style=${{maxWidth:720}}>
+    <span className="badge">Hackathon participation</span><h3>GTA: Hack City</h3><p className="muted">Organized by Campus Konnect at SNS College of Technology. I participated as part of <b style=${{color:'var(--text)'}}>Team Crime</b> and worked on Campus Network Intelligence, gaining hands-on experience in teamwork, technical problem-solving and collaborative development.</p>
+    <div className="tags"><span className="tag">Team Crime</span><span className="tag">Campus Konnect</span><span className="tag">SNS College of Technology</span></div></div><//><//>`}
+function Learning(){
+  return h`<${Section} id="learning" eyebrow="Currently Learning" title="What I’m exploring now">
+    <div className="grid g3">${LEARNING.map(([n,i])=>h`<${Reveal} key=${n}><div className="card"><div className="ico"><${Icon} n=${i}/></div><h3>${n}</h3></div><//>`)}</div><//>`}
+function Contact({toast}){
+  const send=e=>{e.preventDefault();const d=new FormData(e.target);
+    location.href='mailto:'+ME.email+'?subject='+encodeURIComponent('Portfolio message from '+d.get('name'))+'&body='+encodeURIComponent(d.get('message')+'\n\n— '+d.get('name')+' ('+d.get('email')+')');
+    toast('Opening your email app…')};
+  return h`<${Section} id="contact" eyebrow="Contact" title="Let’s connect"><div className="grid g2">
+    <${Reveal}><div className="clinks">
+      <a href=${'mailto:'+ME.email}><${Icon} n="mail"/>${ME.email}</a>
+      <a href=${ME.linkedin} target="_blank" rel="noopener noreferrer"><${Icon} n="linkedin"/>LinkedIn</a>
+      <a href=${ME.github} target="_blank" rel="noopener noreferrer"><${Icon} n="github"/>GitHub</a></div><//>
+    <${Reveal}><form className="card" onSubmit=${send}>
+      <label>Name<input name="name" required autoComplete="name"/></label>
+      <label>Email<input name="email" type="email" required autoComplete="email"/></label>
+      <label>Message<textarea name="message" rows="4" required></textarea></label>
+      <button className="btn primary" type="submit"><${Icon} n="send"/> Send message</button></form><//></div><//>`}
+function App(){
+  const [msg,setMsg]=useState('');
+  const toast=t=>{setMsg(t);setTimeout(()=>setMsg(''),3000)};
+  const resume=()=>{if(ME.resume){const a=document.createElement('a');a.href=ME.resume;a.download='';a.click()}else toast('Resume coming soon — file not yet added.')};
+  useEffect(()=>{lucide.createIcons()});
+  return h`<${React.Fragment}><a className="skip" href="#about">Skip to content</a><${Nav}/><main><${Hero} onResume=${resume}/><${About}/><${Skills}/><${Projects}/><${Certs}/><${Activities}/><${Learning}/><${Contact} toast=${toast}/></main>
+    <footer>© 2026 ${ME.name} · Built with React</footer>${msg&&h`<div className="toast" role="status">${msg}</div>`}<//>`}
+ReactDOM.createRoot(document.getElementById('root')).render(h`<${App}/>`);
+</script>
+</body>
+</html>
